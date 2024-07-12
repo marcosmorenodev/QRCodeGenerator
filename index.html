@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/62a5d9517b.js" crossorigin="anonymous"></script>
+    <title>QR Code Generator by Marcos Moreno</title>
+</head>
+<body>
+
+    <main>
+        <div class = "app__container">
+            <h1 id="app-title">
+                Paste your link down here:
+            </h1>
+            
+            <div class="input__container">
+                <form onsubmit="return false;">
+                    <label>
+                        <input
+                            id = "link-input"
+                            type = "url"
+                            placeholder = "URL"
+                            minlength = "8"
+                        >
+                    </label>
+                </form>
+            </div>
+
+            <div class="qr__container hidden">
+                <img id="qr-img">
+
+                <button id="download-btn">
+                    DOWNLOAD QR
+                    <i class="fa-solid fa-download"></i>
+                </button>
+            </div>
+
+            <div class="error__container hidden">
+                <h1 id="error-msg"></h1>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Copyright 2023&copy; - Marcos Moreno</h2>
+    </footer>
+    
+    <script src = "app.js"></script>
+
+</body>
+</html>
