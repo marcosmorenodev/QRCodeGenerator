@@ -8,7 +8,6 @@
     <title>QR Code Generator by Marcos Moreno</title>
 </head>
 <body>
-
     <main>
         <div class = "app__container">
             <h1 id="app-title">
@@ -29,25 +28,33 @@
             </div>
 
             <div class="qr__container hidden">
-                <img id="qr-img">
+                <div id="img-container">
+                    <img id="qr-img">
+                </div>
 
                 <button id="download-btn">
                     DOWNLOAD QR
                     <i class="fa-solid fa-download"></i>
                 </button>
-            </div>
 
-            <div class="error__container hidden">
+                <button id="print-btn">
+                    PRINT QR
+                    <i class="fa-solid fa-print"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="error-wrapper" class="hidden">
+            <div class="error__container">
                 <h1 id="error-msg"></h1>
             </div>
         </div>
     </main>
 
     <footer>
-        <h2>Copyright 2023&copy; - Marcos Moreno</h2>
+        <h2>Copyright 2023 - Marcos Moreno</h2>
     </footer>
     
     <script src = "app.js"></script>
-
 </body>
 </html>
